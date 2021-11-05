@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>movies Example Site</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+	
+  <!-- Javascript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	  
+  <script src="//unpkg.com/mustache"></script>
+  <script src="//unpkg.com/navigo"></script>
+  <script src="/js/app.js" defer></script>
+
+</head>
+<body onload="init();">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row"  style="margin-top: 15px">
+       <a class="three columns button button-primary" data-navigo href="/">Home</a>
+       <a class="three columns button button-primary" data-navigo href="/movies">Movies</a>
+       <a class="three columns button button-primary" data-navigo href="/directors">Directors</a>
+       <a class="three columns button button-primary" data-navigo href="/producers">Producers</a>
+    </div>
+    <div class="row">
+      <div id="content"></div>
+    </div>
+    <div class="row"  style="margin-top: 15px">
+      <button disabled="disabled" class="twelve columns button-primary">
+         Copyright (c) 2020 - Eduard Arauz Rivera
+      </button>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
