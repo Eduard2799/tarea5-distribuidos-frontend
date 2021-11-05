@@ -1,0 +1,8 @@
+<h3 style="margin-top: 15px">Producers Information</h3>
+This section presents information about producers
+<p>
+<ul>
+  {{#.}}
+    <li><a href='/#/producerById/{{ id }}' data-navigo> {{ name }}</a></li>
+  {{/.}}
+</ul>

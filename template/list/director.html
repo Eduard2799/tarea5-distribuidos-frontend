@@ -1,0 +1,8 @@
+<h3 style="margin-top: 15px">Directors Information</h3>
+This section presents information about directors
+<p>
+<ul>
+  {{#.}}
+    <li><a href='/#/directorById/{{ id }}' data-navigo> {{ name }}</a></li>
+  {{/.}}
+</ul>

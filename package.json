@@ -1,0 +1,10 @@
+{
+  "name": "Tarea-5",
+  "dependencies": {
+    "mongodb": "latest",
+   "express": "latest",
+   "serverless-http": "latest",
+   "body-parser": "latest",
+   "lambda-api": "latest"
+  }
+}

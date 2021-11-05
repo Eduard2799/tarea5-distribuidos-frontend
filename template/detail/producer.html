@@ -1,0 +1,29 @@
+<h4 style="margin-top: 15px">{{ name }}</h4>
+
+<h5>Producer's details</h5>
+<form>
+  <div class="row">
+    <div class="six columns">
+       <label for="idInput">ID</label>
+       <input class="u-full-width" id="id" type="text" value="{{ id }}" readonly/>
+    </div>
+    <div class="six columns">
+       <label for="descriptionInput">Description</label>
+       <input class="u-full-width" id="description" type="text" value="{{ description }}" readonly/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="six columns">
+       <!-- <label for="foundedInput">Founded</label> -->
+       <!-- <input class="u-full-width" id="founded" type="text" value="{{ founded }}"  readonly/> -->
+      <img src="{{image_src}}" alt="">
+      </div>
+  </div>
+</form>
+
+<h5>Books</h5>
+<ul>
+{{#books}}
+  <li><a href="/#/movieById/{{movie_id}}" data-navigo>{{movie_title}}</li>
+{{/books}}
+</ul>

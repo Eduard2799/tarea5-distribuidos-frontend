@@ -1,0 +1,38 @@
+<h4 style="margin-top: 15px">{{ title }}</h4>
+<h5>Movie's details</h5>
+<form>
+  <div class="row">
+    <div class="six columns">
+       <label for="idInput">ID</label>
+       <input class="u-full-width" type="text" id="id" value="{{ id }}" readonly/>
+    </div>
+    <div class="six columns">
+       <label for="yearInput">Year</label>
+       <input class="u-full-width" type="text" id="year" value="{{ year }}" readonly/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="six columns">
+       <label for="durationInput">Duration</label>
+       <input class="u-full-width" type="text" id="duration" value="{{duration }}" readonly/>
+    </div>
+    <div class="six columns">
+       <label for="descriptionInput">Description</label>
+       <input class="u-full-width" type="text" id="description" value="{{ description }}" readonly/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="six columns">
+       <label for=" directorInput">Director</label>
+       <a href="/#/directorById/{{ director_id }}" data-navigo>
+         <input class="u-full-width" type="button" id=" director" value="{{ director_name }}" readonly/>
+       </a>
+    </div>
+    <div class="six columns">
+       <label for="languageInput">Producer</label>
+       <a href="/#/producerById/{{ producer_id }}" data-navigo>
+         <input class="u-full-width" type="button" id="producer" value="{{ producer_name }}" readonly/>
+       </a>
+    </div>
+  </div>
+</form>
