@@ -43,7 +43,7 @@ function init() {
   });
   router.on({
     '/movies': () => {
-      getAll(moviesApi, 'movie');
+      getAll(moviesApi, 'movies');
     },
     '/directors': () => {
       getAll(directorsApi, 'director');
